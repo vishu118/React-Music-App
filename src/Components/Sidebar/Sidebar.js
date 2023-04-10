@@ -1,20 +1,23 @@
 import React from 'react'
 import './Sidebar.css'
-import Sidebar_Buttons from './Sidebar_Buttons'
+import SidebarButtons from './SidebarButtons'
+import {MdFavorite} from 'react-icons/md'
+import {FaGripfire, FaPlay, FaSignOutAlt} from 'react-icons/fa'
+import {IoLibrary} from 'react-icons/io5'
+import {MdSpaceDashboard} from 'react-icons/md'
 
 const Sidebar = () => {
   return (
     <div className='sidebar-container'>
       <img src='https://www.shutterstock.com/image-vector/man-icon-vector-260nw-1040084344.jpg' className='profile-image' alt='profile'/>
       <div className="sidebarButton">
-        <Sidebar_Buttons title = ""  to = "" icon = {''} />
-        <Sidebar_Buttons/>
-        <Sidebar_Buttons/>
-        <Sidebar_Buttons/>
-        <Sidebar_Buttons/>
-        <Sidebar_Buttons/>
+        <SidebarButtons title = "feed"  to = "/Feed" icon = {<MdSpaceDashboard/>} />
+        <SidebarButtons title = "trending"  to = "/Trending" icon = {<FaGripfire/>}/>
+        <SidebarButtons title = "player"  to = "" icon = {<FaPlay/>}/>
+        <SidebarButtons title = "favorites"  to = "" icon = {<MdFavorite/>}/>
+        <SidebarButtons title = "library"  to = "" icon = {<IoLibrary/>}/>
       </div>
-      <Sidebar_Buttons/>
+      <SidebarButtons title = "Sign Out"  to = "" icon = {<FaSignOutAlt/>}/>
     </div>
   )
 }
