@@ -5,11 +5,14 @@ import Feeds from "../Feed/Feeds";
 import Favorites from "../favorites/Favorites";
 import Trending from "../Trending/Trending";
 import Player from "../Player/Player";
+import './Home.css'
+import Sidebar from "../../Components/Sidebar";
 
 const Home = () => {
   return (
     <Router>
       <div className="MainBody">
+      <Sidebar/>
         <Routes>
           <Route path="/" element={<Library />} />
           <Route path="/Feed" element={<Feeds />} />
