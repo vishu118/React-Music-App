@@ -6,7 +6,7 @@ import Favorites from "../favorites/Favorites";
 import Trending from "../Trending/Trending";
 import Player from "../Player/Player";
 import './Home.css'
-import Sidebar from "../../Components/Sidebar";
+import Sidebar from "../../Components/Sidebar/Sidebar";
 
 const Home = () => {
   return (
