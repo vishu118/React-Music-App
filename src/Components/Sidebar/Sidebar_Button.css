@@ -1,0 +1,18 @@
+a{
+    text-decoration: none;
+}
+
+.btn-body{
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    color: #f8D9C8;
+    margin: 5px auto;
+  
+}
+
+.btn-title{
+    margin: 4px auto;
+    font-weight: 600;
+    font-size: 15px;
+}
