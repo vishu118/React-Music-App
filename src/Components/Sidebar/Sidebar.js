@@ -15,7 +15,7 @@ const Sidebar = () => {
         <SidebarButtons title = "trending"  to = "/Trending" icon = {<FaGripfire/>}/>
         <SidebarButtons title = "player"  to = "/Player" icon = {<FaPlay/>}/>
         <SidebarButtons title = "favorites"  to = "/Favorites" icon = {<MdFavorite/>}/>
-        <SidebarButtons title = "library"  to = "" icon = {<IoLibrary/>}/>
+        <SidebarButtons title = "library"  to = "/" icon = {<IoLibrary/>}/>
       </div>
       <SidebarButtons title = "Sign Out"  to = "" icon = {<FaSignOutAlt/>}/>
     </div>
