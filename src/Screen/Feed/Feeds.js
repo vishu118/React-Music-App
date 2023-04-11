@@ -2,7 +2,7 @@ import React from 'react'
 
 const Feeds = () => {
   return (
-    <div>Feeds</div>
+    <div className='screen-container'>Feeds</div>
   )
 }
 
