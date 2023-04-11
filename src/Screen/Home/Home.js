@@ -8,6 +8,7 @@ import Player from "../Player/Player";
 import "./Home.css";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import Login from "../Auth/Login";
+import { setClientToken } from "../../Spotify";
 
 const Home = () => {
   const [token, setToken] = useState("");
@@ -20,8 +21,10 @@ const Home = () => {
       const _token = hash.split("&")[0].split("=")[1];
       window.localStorage.setItem("token", _token);
       setToken(_token);
+      setClientToken(_token)
     } else {
       setToken(token);
+      setClientToken(token)
     }
   }, []);
   return !token ? (
