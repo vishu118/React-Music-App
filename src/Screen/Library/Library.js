@@ -26,8 +26,8 @@ useEffect(()=>{
               className="playlist-image"
               alt="Playlist-Art"
             />
-            <p className="playlist-title">{playlist.name}</p>
-            <p className="playlist-subtitle">{playlist.tracks.total} Songs</p>
+            <p >{playlist.name}</p>
+            <p >{playlist.tracks.total} Songs</p>
            
           </div>
         ))}
