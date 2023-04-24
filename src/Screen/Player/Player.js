@@ -27,12 +27,12 @@ apiClient.get("playlists/" + location.state?.id+"/tracks")
 }
 }, [location.state])
   return (
-    <div className='screen-container'>
+    <div className='screen-container flex'>
       <div className="left-playerbody">
 
       </div>
       <div className="right-playerbody">
-        <SongCard/>
+        <SongCard album = {currentTracks.album}/>
         <Queue/>
       </div>
     </div>
