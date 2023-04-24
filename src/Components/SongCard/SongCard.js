@@ -1,11 +1,14 @@
 import React from 'react'
 import "./SongCard.css"
+import AlbumInfo from './AlbumInfo'
+import AlbumImage from './AlbumImage'
 
-const SongCard = () => {
+const SongCard = ({Album}) => {
+    console.log(Album)
   return (
     <div className='songCard-body flex'>
-         <AlbumImage url={album?.images[0]?.url} />
-         <AlbumInfo album={album} />
+         <AlbumImage url={Album?.images[0]?.url} />
+         <AlbumInfo Album={Album} />
     </div>
   )
 }

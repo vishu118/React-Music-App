@@ -2,24 +2,25 @@ import React from 'react'
 import "./AlbumInfo.css"
 
 const AlbumInfo = ({Album}) => {
+    console.log(Album)
     const artists = [];
-    album?.artists?.forEach((element) => {
+    Album?.artists?.forEach((element) => {
       artists.push(element.name);
     });
     return (
         <div className="albumInfo-card">
           <div className="albumName-container">
             <div className="marquee">
-              <p>{album?.name + " - " + artists?.join(", ")}</p>
+              <p>{Album?.name + " - " + artists?.join(", ")}</p>
             </div>
           </div>
           <div className="album-info">
-            <p>{`${album?.name} is an ${album?.album_type} by ${artists?.join(
+            <p>{`${Album?.name} is an ${Album?.album_type} by ${artists?.join(
               ", "
-            )} with ${album?.total_tracks} track(s)`}</p>
+            )} with ${Album?.total_tracks} track(s)`}</p>
           </div>
           <div className="album-release">
-            <p>Release Date: {album?.release_date}</p>
+            <p>Release Date: {Album?.release_date}</p>
           </div>
         </div>
   )

@@ -32,7 +32,7 @@ apiClient.get("playlists/" + location.state?.id+"/tracks")
 
       </div>
       <div className="right-playerbody">
-        <SongCard Album = {currentTracks.album}/>
+        <SongCard Album={currentTracks?.album}/>
         <Queue/>
       </div>
     </div>
