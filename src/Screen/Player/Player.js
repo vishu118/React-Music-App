@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react'
 import "./Players.css"
 import { useLocation } from 'react-router-dom'
 import apiClient from "../../Spotify"
+import Queue from '../../Components/Queue/Queue'
+import SongCard from '../../Components/SongCard/SongCard'
+
+
 
 
 const Player = () => {
