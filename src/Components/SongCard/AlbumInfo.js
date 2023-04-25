@@ -2,7 +2,7 @@ import React from 'react'
 import "./AlbumInfo.css"
 
 const AlbumInfo = ({Album}) => {
-    console.log(Album)
+    // console.log(Album)
     const artists = [];
     Album?.artists?.forEach((element) => {
       artists.push(element.name);

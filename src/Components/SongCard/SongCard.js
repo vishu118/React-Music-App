@@ -4,7 +4,7 @@ import AlbumInfo from './AlbumInfo'
 import AlbumImage from './AlbumImage'
 
 const SongCard = ({Album}) => {
-    console.log(Album)
+    
   return (
     <div className='songCard-body flex'>
          <AlbumImage url={Album?.images[0]?.url} />
