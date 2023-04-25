@@ -12,7 +12,7 @@ const [playlist , setPlaylist] = useState(null)
 useEffect(()=>{
   APIKit.get("me/playlists").then((res)=>{
     setPlaylist(res.data.items)
-    console.log(res.data.items.images[0].url)
+    // console.log(res.data.items.images[0].url)
   })
 }, [])
 

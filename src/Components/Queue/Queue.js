@@ -4,11 +4,14 @@ import "./Queue.css"
 const Queue = ({tracks,setcurrentIndex}) => {
   console.log(tracks)
   return (
-   <div className="queue-container flex">
-      <div className="queue flex">
-        <p className="upNext">Up Next</p>
-        <div className="queue-list">
-          {tracks?.map((track, index) => (
+    <div className="queue-container flex">
+    <div className="queue flex">
+      <p className="upNext">Up Next</p>
+      <div className="queue-list">
+      
+      {
+        tracks?(
+          tracks?.map((track, index) => (
             <div
               key={index + "key"}
               className="queue-item flex"
@@ -17,11 +20,13 @@ const Queue = ({tracks,setcurrentIndex}) => {
               <p className="track-name">{track?.track?.name}</p>
               <p>0:30</p>
             </div>
-          ))}
-        </div>
+          ))
+        ): console.log("NO")
+      }
       </div>
     </div>
-  );
+  </div>
+  )
 }
 
 export default Queue

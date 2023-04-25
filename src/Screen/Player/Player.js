@@ -17,8 +17,9 @@ const [ currentIndex,setcurrentIndex ] =useState(0);
 
 
 useEffect(()=>{
-if(location.state){
-apiClient.get("playlists/" + location.state?.id+"/tracks")
+if (location.state) {
+apiClient
+.get("playlists/" + location.state?.id+"/tracks")
 .then(res=>{
   setTracks(res.data.items)
   setcurrentTracks(res.data.items[0].track)
