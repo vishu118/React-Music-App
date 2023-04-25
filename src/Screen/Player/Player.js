@@ -26,6 +26,11 @@ apiClient.get("playlists/" + location.state?.id+"/tracks")
   )
 }
 }, [location.state])
+
+useEffect(() => {
+  setcurrentTracks(tracks[currentIndex]?.track);
+}, [currentIndex, tracks]);
+
   return (
     <div className='screen-container flex'>
       <div className="left-playerbody">

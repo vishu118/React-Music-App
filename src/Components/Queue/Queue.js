@@ -4,7 +4,7 @@ import "./Queue.css"
 const Queue = ({tracks,setcurrentIndex}) => {
   console.log(tracks)
   return (
-    <div className="queue-container flex">
+   <div className="queue-container flex">
       <div className="queue flex">
         <p className="upNext">Up Next</p>
         <div className="queue-list">
