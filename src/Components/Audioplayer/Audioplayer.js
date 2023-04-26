@@ -2,14 +2,14 @@ import React from 'react'
 import "./Audioplayer.css"
 import Progrescircle from './Progrescircle'
 
-const Audioplayer = () => {
+const Audioplayer = ({currentTracks}) => {
   return (
-    <div className='player-body'>
+    <div className='player-body flex'>
         <div className="playerLeft-body">
           <Progrescircle
-          percentage={currentPercentage}
+          percentage={75}
           isPlaying={true}
-          image={currentTrack?.album?.images[0]?.url}
+          image={currentTracks?.album?.images[0]?.url}
           size={300}
           color="#C96850"
 

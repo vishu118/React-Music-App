@@ -36,7 +36,7 @@ useEffect(() => {
   return (
     <div className='screen-container flex'>
       <div className="left-playerbody">
-        <Audioplayer/>
+        <Audioplayer currentTracks={currentTracks}/>
       </div>
       <div className="right-playerbody">
         <SongCard Album={currentTracks?.album}/>
