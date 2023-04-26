@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom'
 import apiClient from "../../Spotify"
 import Queue from '../../Components/Queue/Queue'
 import SongCard from '../../Components/SongCard/SongCard'
+import Audioplayer from '../../Components/Audioplayer/Audioplayer'
 
 
 
